@@ -1,0 +1,421 @@
+body{
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Tahoma,sans-serif; /**/
+}
+
+/******** start my framework *********/
+.taransition-method{
+	-webkit-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out
+}
+button , a {outline: none}
+h1,h2,h3,h4,h5,h6{font-family: serif;}/**/
+p,span{font-family: Tahoma,sans-serif;}/**/
+/********* end my framework **********/
+
+header .head-content button:hover,section.about .row .info button.hire-me:hover
+    {-webkit-transform: scale(1.02);-moz-transform: scale(1.02);-o-transform: scale(1.02);transform: scale(1.02)}  
+/* start the header  */ 
+header{background-image: url("../images/header/2.jpg");background-attachment: fixed; background-size: cover;height: 630px;position: relative}
+header .overlay {position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-color: #2b2c2d;opacity: 0.9}
+nav {
+    background-color: rgba(0,0,0,0);
+    position: fixed !important;left: 0;left: 0;
+    width: 100%;
+    z-index: 888;
+    transition: all .5s ease-in-out;
+}
+.navbar-brand{display: flex}
+.navbar-brand img{width: 37px;height: 41px;display: block;margin: 7px 7px 0 0}
+.navbar-brand span{width: 250px;display: block;float: left}
+.navbar-brand p:first-of-type{font-size: 25px;font-weight: 900;margin: 0}
+.navbar-brand p:last-of-type{font-size: 16px;margin: 0;margin-top:-5px; }
+.navbar-brand{color: #FFF}
+.navbar-expand-lg .navbar-collapse ul li {margin-right: 20px}
+.navbar-expand-lg .navbar-collapse ul li a{color: #FFF;font-weight: 550}
+.navbar-expand-lg .navbar-collapse ul li a.active {border-bottom: 3px solid rgb(255, 0, 68) !important}
+.navbar-light .navbar-toggler {outline: none;background-color: rgba(255, 255, 255, 1);border: 1px solid rgba(255, 0, 68,1);color: white}
+@media(max-width: 991px){
+    nav {min-height: 100px}
+    .navbar-brand{margin-left: 0}
+    .navbar-expand-lg .navbar-collapse ul li {margin-right: 0px;} 
+    .navbar-collapse ul{width: 100px;text-align: center;background-color: white;box-shadow: 5px 4px 36px -6px rgba(112,0,0);border-radius: 5px}
+    .navbar-collapse ul li{padding: 8px}
+    .navbar-collapse ul li a{color: #333 !important}
+}
+@media(max-width: 410px){
+    .navbar-brand{width: 170px}
+    .navbar-brand img{width: 20px;height: 25px;margin: 7px 7px 0 0}
+    .navbar-brand span{width: 143px}
+    .navbar-brand p:first-of-type{font-size: 18px;font-weight: 700}
+    .navbar-brand p:last-of-type{font-size: 12px }
+    .navbar-light .navbar-toggler{padding: 3px 6px}
+    .navbar-collapse ul{width: 80px}
+    .navbar-collapse ul li{padding: 5px}
+    .navbar-expand-lg .navbar-collapse ul li a{font-size: 12px;font-weight: 550}
+
+}
+header .head-content{position: absolute;left: 0;top: 120px;right: 0;bottom: 0;z-index: 3;color: #fff;display: flex;align-items: center;}
+header .head-content span{font-size: 25px;font-weight: 600}
+header .head-content p:first-of-type{font-size: 35px;font-weight: 700}
+header .head-content p:nth-of-type(2){font-size: 20px;font-weight: 550}
+header .head-content button{width: 200px;padding: 15px;color: #FFF;border: none;font-weight: 600;margin: 20px 10px 10px 0;border-radius: 5px;cursor: pointer;outline: none}
+header .head-content button.hire-me{background-color: rgb(255, 0, 68);}
+header .head-content button:last-of-type{background-color: hsla(0,0%,100%,.14);}
+@media(max-width: 410px){
+    header .head-content span{font-size: 16px}
+    header .head-content p:first-of-type{font-size: 22px}
+    header .head-content p:nth-of-type(2){font-size: 14px}
+    header .head-content button{width:80px;padding: 5px;font-size: 14px }
+}
+/* end the header */
+/*start about */
+section.public .public-title{padding: 40px 0;text-align: center}
+section.public .public-title h2{font-size: 35px;font-weight: 800;margin: 0}
+section.public .public-title span{display: block;width: 50px;height: 3px;background-color: rgb(255, 0, 68);margin: auto}
+section.public .public-title p{font-size: 20px;font-weight: 550;margin-top: 15px}
+section.about{padding: 50px 0}
+section.about .row .skills h3{margin-bottom: 30px;font-weight: 600}
+section.about .row .skills span{font-weight: 550;display: block}
+section.about .row .skills .progress{margin-bottom: 15px}
+section.about .row .skills .progress .progress-bar{background-color: #777}
+section.about .row .info h3{margin-bottom: 30px;font-weight: 600}
+section.about .row .info >span{padding: 10px;box-shadow: 2px 2px 5px 0px rgba(0,0,0);display: block;margin-bottom: 15px}
+section.about .row .info p{font-size: 18px;font-weight: 600;color: #111}
+section.about .row .info p span{font-size: 15px;color: #666}
+section.about .row .info button.hire-me{width: 100px;padding: 7px;border-radius: 5px;color: #FFF;border: none;font-weight: 600;
+    background-color: rgb(255, 0, 68);
+    cursor: pointer;outline: none
+}
+@media(max-width: 767px){
+    section.about .row .info h3{margin-top: 20px}
+}
+@media(max-width: 410px){
+    section.public .public-title{padding: 20px 0}
+    section.public .public-title h2{font-size: 22px;font-weight: 700}
+    section.public .public-title span{width: 30px}
+    section.public .public-title p{font-size: 15px;margin-top: 10px}
+    section.about{padding: 20px 0}
+    section.about .row .skills h3{margin-bottom: 20px;font-size: 18px}
+    section.about .row .skills span{font-size: 13px}
+    section.about .row .skills .progress {height: 11px}
+    section.about .row .info h3{margin-bottom: 20px;font-size: 18px}
+    section.about .row .info >span{padding: 8px;font-size: 13px}
+    section.about .row .info p{font-size: 14px}
+    section.about .row .info p span{font-size: 12px}
+    section.about .row .info button.hire-me{width: auto;padding: 5px 10px;border-radius: 5px;font-size: 13px}
+}
+/* end about */
+.seperator{width: 80%;height: 1.5px;box-shadow: 0px 5px 5px #999;margin: auto}
+/* start portfolio */
+.portfolio {padding: 20px 0 20px 0}
+.portfolio .row{margin: 0;padding: 40px 0}
+.portfolio .row .img{position: relative;height: 400px;overflow: hidden;box-shadow: 0px 0px 10px -6px rgb(255, 0, 71)}
+.portfolio .row .img:hover{box-shadow: 0px 0px 15px -6px rgb(255, 0, 71);}                                            
+.portfolio .row .img img{
+    position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 4;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.portfolio .row .img .img-overlay{
+    position: absolute;top: 0;left: 0;right: 0;bottom: 0;
+    background-color: #333B50;;opacity: .3;
+    z-index: 5;
+    display: none;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
+}
+.portfolio .Mo-Salah .row .img img{height: auto;margin: 0;cursor: pointer;-webkit-transition: all 5s ease-in-out;-moz-transition: all 5s ease-in-out;-o-transition: all 5s ease-in-out;}
+.portfolio .Mo-Salah .row .img:hover img{
+    -webkit-transform: scale(1);-moz-transform: scale(1);-o-transform: scale(1);transform: scale(1)
+}
+.portfolio .Mo-Salah .row .img .img-overlay{background-color: #717d9c}
+
+.portfolio .row .img .content{
+    position: absolute;top: 50%;left: 50%;
+    z-index:6;text-align: center;
+    margin-left: -100px;
+    margin-top: -60px;
+    padding: 9px;
+    display: none;
+    -moz-transition: all 5s ease-in-out;
+    -webkit-transition: all 5s ease-in-out;
+    -o-transition: all 5s ease-in-out;
+    transition: all 5s ease-in-out;
+}
+.portfolio .row .img .content h3{color: #fff;font-weight: 600}
+.portfolio .row .img .content p{color: #fff;font-weight: 550}
+.portfolio .row .img .content button{                                                                                        
+    width: 60px;padding: 6px;background-color: #333B50;opacity: .8; border: 1px solid white;border-radius: 5px;
+    cursor: pointer;outline: none;color: white;left: 50%;transition: all .3s ease-in-out
+}
+.portfolio .row .img .content button a{color: white;text-decoration: none;font-weight: 700;font-size: 14px}                 
+.portfolio .row .img .content button:hover {background-color: white;color: #222}                                            
+.portfolio .row .img .content button:hover a{color: #222}                                                                   
+.portfolio .row .img:hover img{-webkit-transform: scale(1.02);-moz-transform: scale(1.2);-o-transform: scale(1.2);transform: scale(1.02)}
+.portfolio .row .img:hover .img-overlay,.portfolio .row .img:hover .content{display: block}
+.portfolio .row .description{padding: 100px 10px 20px 100px}
+.portfolio .row .description h2{font-weight: 700}
+.portfolio .row .description p{font-size: 14px;font-weight: 550;color: #999}
+.portfolio .Mo-Salah .row .description p span{font-size: 16px;font-weight: 600;color: black}
+.portfolio .row .description button{border: 1px solid rgb(255, 0, 68);background-color: white;cursor: pointer;padding: 6px;color: rgb(255, 0, 68);border-radius: 5px;font-weight: 550;outline: none;-webkit-transition: all .3s ease-in-out;transition: all .3s ease-in-out}  
+.portfolio .row .description button:hover{background-color: rgb(255, 0, 68);color: white}
+.portfolio .main-gallary-popup{position: fixed;top: -100%;left: 0;height: 100%;right: 0;background-color: rgba(0,0,0,.3);z-index: 1499}
+.portfolio .main-gallary-popup .gallary-popup{
+    position: fixed;top: -50%;left: 50%;
+    margin-left: -300px;margin-top: -235px;
+    width: 600px;height: 470px;
+    z-index: 1500;border-radius: 5px;
+    background-color: #121315;
+    border-top: 1px solid rgb(255, 0, 68);
+    box-shadow: 0px 8px 3px 0px rgb(158, 0, 0);    
+}
+.portfolio .main-gallary-popup .gallary-popup h5{width: 100%;height: 50px;text-align: center;color: white;position: relative;margin: 0 0 10px 0}
+.portfolio .main-gallary-popup .gallary-popup h5 span{
+    position: absolute;top: 10px;
+    width: 200px;padding: 5px;
+    margin-left: 50%;margin-left: -100px;
+    border-radius: 5px;color: white;
+    border: 1px solid #FFF;border-bottom: 2px solid #c10436
+}
+.portfolio .main-gallary-popup .gallary-popup i.fa{position: absolute;right: 10px;top: 10px;cursor: pointer}
+.portfolio .main-gallary-popup .gallary-popup .main-img{width: 95%;margin: auto;border: 2px solid #FFF;height: 265px}
+.portfolio .main-gallary-popup .gallary-popup .main-img img{width: 100%;height: 100%}
+.portfolio .main-gallary-popup .gallary-popup .small-img{width: 95%;margin: auto;margin-top: 5px}
+.portfolio .main-gallary-popup .gallary-popup .small-img img{float: left;border: 2px solid #121315;cursor: pointer}
+.portfolio .main-gallary-popup .gallary-popup .small-img img.selected {border: 1px solid rgb(255, 0, 68)}
+.clear {clear: both}
+.portfolio .main-gallary-popup .gallary-popup ul {color: #EEE;font-size: 13px;font-weight: 600;margin: 10px 0}
+@media(max-width: 800px){
+    .portfolio .main-gallary-popup .gallary-popup{margin-left: -225px;margin-top: -175px;width: 450px;height: 350px;}
+    .portfolio .main-gallary-popup .gallary-popup h5{margin: 0;height: 40px}
+    .portfolio .main-gallary-popup .gallary-popup h5 span{padding: 2px;font-size: 14px}
+    .portfolio .main-gallary-popup .gallary-popup i.fa{font-size: 16px}
+    .portfolio .main-gallary-popup .gallary-popup .main-img{height: 195px}
+    .portfolio .main-gallary-popup .gallary-popup ul {font-size: 11px;margin: 5px 0}
+}
+@media(max-width: 550px){
+    .portfolio .main-gallary-popup .gallary-popup{margin-left: -175px;margin-top: -150px;width: 350px;height: 300px;}
+    .portfolio .main-gallary-popup .gallary-popup h5{margin: 0;height: 40px}
+    .portfolio .main-gallary-popup .gallary-popup h5 span{padding: 2px;font-size: 11px;}
+    .portfolio .main-gallary-popup .gallary-popup .main-img{height: 155px}
+    .portfolio .main-gallary-popup .gallary-popup ul {font-size: 10px;margin: 4px 0}
+}
+@media(max-width: 430px){
+    .portfolio .main-gallary-popup .gallary-popup{margin-left: -140px;margin-top: -140px;width: 280px;height: 280px}
+    .portfolio .main-gallary-popup .gallary-popup h5{margin: 0;height: 35px}
+    .portfolio .main-gallary-popup .gallary-popup h5 span{padding: 2px;font-size: 10px}
+    .portfolio .main-gallary-popup .gallary-popup .main-img{height: 132px}
+    .portfolio .main-gallary-popup .gallary-popup ul {font-size: 9px;margin: 4px 0}
+}
+.portfolio .home-popup{position: fixed;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0,.3);z-index: 999;display: none}
+.portfolio .home-popup .popup{
+    position: fixed;top: 50%;left: 50%;margin-top: -255px;
+    margin-left: -200px; width: 400px;height: 510px;
+    z-index: 1000;
+    border-radius: 5px;
+    background-color: white;
+    border-top: 1px solid rgb(255, 0, 68);
+    box-shadow: 0px 8px 3px 0px rgb(158, 0, 0);    
+}
+.portfolio .home-popup .popup h3{text-align: center;position: relative}
+.portfolio .home-popup .popup h3 i.fa-window-close{position: absolute;top: 10px;right: 10px;font-size: 18px;cursor: pointer}
+.portfolio .home-popup .popup img{width: 100%;height: 55%}
+.portfolio .home-popup .popup h5{text-align: center;font-weight: 550;margin-top: 10px}
+.portfolio .home-popup .popup ul{font-size: 14px;font-weight: 550;margin: 0}
+.portfolio .home-popup .popup button{background-color: white;border: 1px solid rgb(255, 0, 68);padding: 3px;width: auto;margin: 0;margin-left: 38%}
+.portfolio .home-popup .popup button a{color: rgb(255, 0, 68);text-decoration: none;outline: none}
+@media(max-width: 992px){
+    .portfolio .row >div.description {order: 2}
+    .portfolio .row .img{height: 400px}
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .portfolio .row .img{height: 295px}
+}
+@media(max-width: 767px) {
+    .portfolio .row .img{height: 460px}
+    .portfolio .row .description{padding: 70px 10px 10px 70px}
+    
+    .portfolio .home-popup .popup{margin-left: -170px;margin-top: -250px;width: 340px;height: 500px;}
+    .portfolio .home-popup .popup h3{font-size: 18px;margin-top: 10px}
+    .portfolio .home-popup .popup h3 i.fa-window-close{top: 2px;font-size: 16px;}
+    .portfolio .home-popup .popup img{height: 52%}
+    .portfolio .home-popup .popup h5{font-size: 14px;font-weight: 600}
+    .portfolio .home-popup .popup ul{font-size: 11px}
+    .portfolio .home-popup .popup button{padding: 4px;margin-top: 15px}
+    .portfolio .home-popup .popup button a{font-weight: 500}
+
+}
+@media(max-width: 575px) {
+    .portfolio .row{padding: 30px 10%}
+    .portfolio .row .img{height: 300px}
+    .portfolio .row .description{padding: 50px 10px 10px 50px}
+    
+    .portfolio .home-popup .popup{margin-left: -150px;margin-top: -235px;width: 300px;height: 470px;}
+    .portfolio .home-popup .popup h3{font-size: 17px;margin-top: 10px}
+    .portfolio .home-popup .popup h3 i.fa-window-close{top: 2px;font-size: 15px;}
+    .portfolio .home-popup .popup img{height: 52%}
+    .portfolio .home-popup .popup h5{font-size: 13px}
+    .portfolio .home-popup .popup ul{font-size: 10px}
+    .portfolio .home-popup .popup button{padding: 3px;margin-left: 35%;margin-top: 10px}
+    .portfolio .home-popup .popup button a{font-size: 12px;font-weight: 600}
+}
+@media(max-width: 410px){
+    .portfolio .row{margin: 0;padding: 40px 0}
+    .portfolio .row .img{height: 320px}
+    .portfolio .row .description{padding: 30px 5px 5px 30px}
+    .portfolio .row .description h2{font-weight: 700;font-size: 18px}
+    .portfolio .row .description p{font-size: 12px}
+    .portfolio .row .description button{padding: 4px;border-radius: 4px}
+    
+    .portfolio .home-popup .popup{margin-left: -125px;margin-top: -235px;width: 250px;height: 470px;}
+    .portfolio .home-popup .popup h3{font-size: 16px;margin-top: 8px}
+    .portfolio .home-popup .popup h3 i.fa-window-close{top: 2px;font-size: 14px;}
+    .portfolio .home-popup .popup img{height: 52%}
+    .portfolio .home-popup .popup h5{font-size: 13px}
+    .portfolio .home-popup .popup ul{font-size: 10px}
+    .portfolio .home-popup .popup button{padding: 2px;margin-left: 40%}
+    .portfolio .home-popup .popup button a{font-size: 10px;font-weight: 600}
+}
+/* end portfolio */
+/* start the service   */
+.services { text-align: center;height: 540px;background-color: #F2F2F2}
+.carousel-inner{padding-bottom: 100px}
+.services .carousel-item i.fa{font-size: 24px;padding: 20px;border: 1px solid rgb(255, 0, 68);color: rgb(255, 0, 68);border-radius: 50%;margin: 20px}
+.services .carousel-item h3{color: #111;margin-bottom: 20px;font-size: 24px;font-weight: 600 }
+.services .carousel-item p{color: #666 ;width: 50%;margin: auto;font-size: 16px;font-weight: 550; min-height: 60px}
+@media (max-width: 575px){
+    .services{height: 450px}
+	.services h2 {font-size: 26px}
+	.services h3 {font-size: 20px}
+	.services .carousel-item i{padding: 15px;font-size: 30px}
+	.services .carousel-item h3{font-size: 16px;font-weight: 700}
+	.services .carousel-item p{width: 100%;font-size: 14px}
+}
+/*end the service */
+/* start contact */
+:focus{outline: none}
+.contact{text-align: center;min-height: 600px;padding: 20px 0}
+.contact .row .inf img{width: 135px;height: 165px;border-radius: 50%;display: block;margin: auto;margin-bottom: 15px}
+.contact .row .inf i{color: rgb(255, 0, 68)}
+.contact .row .inf p{font-weight: 600;color: #777}
+.contact .row .form form input{width:32.5%;height: 40px;border-radius: 5px;padding: 5px;background-color: #F1F1F1;border: none }
+.contact .row .form form textarea{width: 99%;padding: 5px;border-radius: 5px;margin-top: 5px;background-color: #F1F1F1;border: none }
+.contact .row .form form button{color: rgb(255, 0, 68); display: block;width: 80px;border: 1px solid rgb(255, 0, 68);background-color: #FFF;border-radius: 5px;float: right;outline: none;cursor: pointer}
+@media(max-width: 768px){
+    .contact .row .form form{margin: 20px 0}
+}
+@media(max-width: 410px){
+    .contact .row .inf i{font-size: 22px}
+    .contact .row .inf p{font-size: 14px}
+    .contact .row .form form input{display: block;width: 100%;margin: 5px 0}
+}
+/* end contact */
+
+
+/* start footer */
+footer{background-color: #EEE;padding: 15px;text-align: center}
+footer span {margin-right: 3%}
+footer i{margin-right: 3px;color: #555}
+@media(max-width: 500px){
+    footer span {font-size: 15px}
+    footer i.fa{font-size: 12px}
+}
+/* end footer */
+/* start CV */
+.cv-popup{ position: fixed;top: 0;left: -100%;bottom: 0;width: 100%;background-color: #FFF;z-index: 1111;display: flex;align-items: center;overflow: scroll}
+.cv-popup .content{width: 95%;margin: auto;z-index: 150;background-color: #F9F9F9;padding-bottom: 10px}
+.cv-popup .content .header{text-align: center;background-color: #2b2c2d;color: #FFF;height: 60px;position: relative;width: 100%}
+.cv-popup .content .header h3{margin: 0;line-height: 60px}
+.cv-popup .content .header i.fa-window-close{position: absolute;top: 5px;right: 5px;cursor: pointer}
+.cv-popup .content .row{margin: 0;padding: 15px 10px 0 10px;}
+.cv-popup .content .row >div {padding: 0}
+.cv-popup .content .row >div h5{font-size: 16px;font-weight: 550 }
+.cv-popup .content .row >div p{font-size: 13px;color: #444;padding-left: 15px;margin-bottom: 3px}
+
+@media(min-width: 576px) and (max-width: 700px) {
+    .cv-popup .content{width: 98%}
+    .cv-popup .content .row{padding: 10px 5px 0 5px}
+    .cv-popup .content .row >div h5{margin-bottom: 5px }
+    .cv-popup .content .row >div p{font-size: 12px;font-weight: 600}
+}
+@media(max-width: 575px){
+    .cv-popup .content .header{height: 50px}
+    .cv-popup .content .header h3{font-size: 23px;line-height: 50px}
+    .cv-popup .content .row >div span.no{display: none}
+    .cv-popup .content{width: 98%}
+    .cv-popup .content .row{padding: 8px 5px 0 5px}
+    .cv-popup .content .row >div h5{margin-bottom: 2px }
+    .cv-popup .content .row >div p{font-size: 12px;font-weight: 550;}
+}
+@media(max-width: 400px){
+    .cv-popup .content .header{height: 35px}
+    .cv-popup .content .header h3{font-size: 15px;line-height: 35px}
+    .cv-popup .content{width: 98%}
+    .cv-popup .content .row{padding: 6px 5px 0 5px}
+    .cv-popup .content .row >div h5{margin-bottom: 4px;font-size: 14px }
+    .cv-popup .content .row >div p{font-size: 9px}
+}
+/* end CV */
+/* start contact popup */
+ .popup-btn{
+     width: 100px;padding: 7px;
+     background-color:  rgb(255, 0, 68);
+     border: none;border-radius: 5px;
+     color: #fff;cursor: pointer;
+     position: fixed;bottom: 10px;right: 10px;z-index: 100;outline: none;
+}
+ button i{margin-right: 4px;}
+.popup{
+    width: 400px;height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #2b2c2d;
+    position: fixed;bottom: -100%;right: 10px;z-index: 100
+}
+.popup .head{
+    width: 100%;height: 50px;
+    background-color: rgb(255, 0, 68);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;padding: 15px;
+    font-weight: 650;cursor: pointer
+}
+.popup .head .fa-chevron-down{float: right}
+.popup .head .fa-chevron-down:hover{transform: translateY(2px)}
+.popup p{width: 95%;margin: auto;padding: 30px 10px;color: white;border: 1px solid #888;margin: 10px;color: #999 }
+.popup input,.popup textarea{display: block;border: 1px solid #888;margin: 10px;width: 95%;background-color: #2b2c2d;padding: 7px;}
+.popup button{margin: 0 10px 10px 10px;width: 95%;background-color: rgb(255, 0, 68);font-weight: 550;border: 1px solid #888;padding: 5px;border-radius: 5px;cursor: pointer;color: #FFF;outline: none}
+@media(max-width: 767px){
+    .popup-btn{width: auto;padding: 7px;border-radius: 4px}
+    .popup{width: 320px;height: auto;bottom: -100%}
+    .popup .head{height: 45px;padding: 10px;font-weight: 600}
+    .popup p{width: 94%;padding: 20px 8px;margin: 10px;font-size: 15px}
+    .popup input , .popup textarea{width: 94%;padding: 5px}
+    .popup button{width: 94%;font-weight: 700;padding: 5px;}
+}
+@media(max-width: 530px){
+    .popup-btn{width: auto;padding: 5px;border-radius: 4px}
+    .popup{width: 230px;height: auto;bottom: -100%;right: 10px}
+    .popup .head{height: 40px;padding: 10px}
+    .popup p{width: 93%;padding: 17px 7px;margin: 10px;font-size: 12px}
+    .popup input,.popup textarea{width: 93%;padding: 5px}
+    .popup textarea{height: 80px}
+    .popup button{width: 93%;font-weight: 600;padding: 5px;}
+}
+@media(max-width: 400px){
+    .popup textarea{height: 80px}
+    .popup p{width: 93%;padding: 17px 7px;margin: 10px;font-size: 10px}
+}
+
+/* end contact popup */
