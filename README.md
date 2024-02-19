@@ -19,7 +19,7 @@ Visit the live website [My website](https://mahmoudwafdy.github.io/portofolio/).
 Find the source code in this [https://github.com/MahmoudWafdy/portofolio).
 
 ## Preview
-![website photo](../images/1.JPG) 
+![website photo](./images/1.JPG) 
 
 
 ## How to Run
